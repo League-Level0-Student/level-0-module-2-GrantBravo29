@@ -46,10 +46,10 @@ public class DiceRoll {
 		}
 		Random rand=new Random();
 
-		int hiiii = rand.nextInt(6);
 		label.setIcon(oneImg);
 
 		rollButton.addActionListener((e) -> {
+			int hiiii = rand.nextInt(7);
 
 			// 1. Make randomChoice equal to a random number between 1 and 6
 			int randomChoice = hiiii;
