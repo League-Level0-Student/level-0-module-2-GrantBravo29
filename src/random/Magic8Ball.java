@@ -1,7 +1,6 @@
 //    Copyright (c) The League of Amazing Programmers 2013-2018
 //    Level 0
 
-
 package random;
 
 import java.util.Random;
@@ -11,30 +10,41 @@ import javax.swing.JOptionPane;
 public class Magic8Ball {
 
 	// 1. Make a main method that includes all the steps below….
-public static void main(String[] args) {
-	new Random().nextInt(4);	
-int e = 17;
-}
-	// 2. Make a variable that will hold a random number and put a random number into this variable using "new Random().nextInt(4)"
+	public static void main(String[] args) {
 
-	// 3. Print out this variable
+		int randomNumber = new Random().nextInt(4);
 
-	// 4. Get the user to enter a question for the 8 ball
-JOptionPane.showMessagedialog;, null, ""
-	// 5. If the random number is 0
+		// 2. Make a variable that will hold a random number and put a random number
+		// into this variable using "new Random().nextInt(4)"
 
-	// -- tell the user "Yes"
+		// 3. Print out this variable
 
-	// 6. If the random number is 1
+		// 4. Get the user to enter a question for the 8 ball
 
-	// -- tell the user "No"
+		// 5. If the random number is 0
 
-	// 7. If the random number is 2
+		++++++++++
+		+JOptionPane.showInputDialog("ASK ME A QUESTION");
 
-	// -- tell the user "Maybe you should ask Google?"
+		// -- tell the user "Yes"
 
-	// 8. If the random number is 3
+		if (randomNumber == 0) {
+			JOptionPane.showMessageDialog(null, "yes");
+			// 6. If the random number is 1
 
-	// -- write your own answer
+			// -- tell the user "No"
+		} else if (randomNumber == 1) {
+			JOptionPane.showMessageDialog(null, "no");
+			// 7. If the random number is 2
 
+			// -- tell the user "Maybe you should ask Google?"
+		} else if (randomNumber == 2) {
+			JOptionPane.showMessageDialog(null, "ask google dont ask me");
+			// 8. If the random number is 3
+
+			// -- write your own answer
+		} else if (randomNumber == 3) {
+			JOptionPane.showMessageDialog(null, "definetly not nice");
+		}
+	}
 }
