@@ -38,10 +38,13 @@ public class AnimalFarm {
 	playWoof();
 	}
 if(g.equals("llama")) {
-	
+	playLLama();
 	
 }
-}
+if(g.equals("cat")) {
+playMeow();	
+	}
+	}
 	void playMoo() {
 		playNoise(mooFile);
 	}
@@ -53,7 +56,13 @@ if(g.equals("llama")) {
 	void playWoof() {
 		playNoise(woofFile);
 	}
+void playLLama() {
+	playNoise(llamaFile);
 
+}
+ void playMeow() {
+	 playNoise(meowFile);
+ }
 	String quackFile = "quack.wav";
 	String mooFile = "moo.wav";
 	String woofFile = "woof.wav";
